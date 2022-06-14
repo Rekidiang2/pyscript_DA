@@ -1,0 +1,55 @@
+<html>
+    <!--https://analyticsindiamag.com/run-your-first-data-analysis-program-in-the-browser-with-pyscript/-->
+    <!--https://www.freecodecamp.org/news/pyscript-python-front-end-framework/-->
+    <head>
+    <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
+    <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <py-env>
+        - numpy
+        - matplotlib
+        - seaborn
+        - pandas
+    </py-env>
+</head>
+ 
+<body>
+    <h3>I'm Kiese Diangebeni Reagan</h3>
+    <h2>Data Analysis in front-end with pyscript</h2>
+
+    <!--DATA-->
+    <py-script >
+        import matplotlib.pyplot as plt
+        import numpy as np
+       
+        x = np.random.randn(1000)
+        y = np.random.randn(1000)
+    </py-script>
+
+    <!--PLOT-->
+ 
+    <div class="random-plot">
+    <py-script >
+        fig, ax = plt.subplots(figsize=(15,8))
+        plt.title("Scatter plot with random number")
+        ax.scatter(x, y)
+        plt.tick_params(
+        axis='both',          
+        which='both',      
+        bottom=False,  
+        top=False,
+        left=False,
+        right=False,
+        labeltop=False,
+        labelleft=False,
+        labelright=False,      
+        labelbottom=False)
+       
+        plt.xlabel("Random numbers")
+        plt.ylabel("Random numbers")
+        fig
+       
+    </py-script>
+</div>
+</body>
+</html>

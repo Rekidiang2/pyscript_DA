@@ -1,0 +1,16 @@
+body{
+    background-color: rgba(141, 230, 114, 0);
+}
+.random-plot{
+    
+    align-content: center;
+    background-color: rgb(91, 152, 190);
+    padding: 50px 100px 50px 100px; 
+    /*top, left, bottom, rigth*/
+    background-color: rgb(91, 152, 190);
+    
+}
+
+h3, h2{
+    text-align: center;
+}
